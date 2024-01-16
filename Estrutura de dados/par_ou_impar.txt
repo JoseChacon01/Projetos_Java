@@ -1,0 +1,77 @@
+=================meu=====================
+
+package aula1_estrutura;
+import java.util.Scanner;
+public class par_ou_impar {
+public static void main(String []args){
+   Scanner in = new Scanner(System.in);
+   int quantidade = 6;
+        int[] vetor = new int [quantidade];
+        
+    System.out.println("Insira 6 numeros aleatorio:");
+    
+    System.out.println("Primeiro numero:");
+         vetor[0] = Integer.parseInt(in.nextLine());
+         
+         System.out.println("Segundo numero:");
+         vetor[1] = Integer.parseInt(in.nextLine());
+         
+         System.out.println("Terceiro numero:");
+         vetor[2] = Integer.parseInt(in.nextLine());
+         
+         System.out.println("Quarto numero:");
+         vetor[3] = Integer.parseInt(in.nextLine());
+         
+         System.out.println("Quinto numero:");
+         vetor[4] = Integer.parseInt(in.nextLine());
+         
+         System.out.println("Sexto numero:");
+         vetor[5] = Integer.parseInt(in.nextLine());
+         
+    
+         int aux;
+         for (int i = 0; i < 6 -1; i++){
+         if(vetor[i] % 2 != 0 ){
+          aux = vetor[i];
+           vetor[i] = vetor[i + 1];
+           vetor[i + 1] = aux;
+            
+            System.out.println(vetor[i]);
+            
+         }
+         }
+             
+       /* if(vetor[i] % 2 == 0 ){
+            System.out.println("O numero " + vetor[i] + " é par.");
+        }else{
+                System.out.println("O numero " + vetor[i] + " é impar.");
+        }
+         */
+     
+}
+}
+
+
+=============site=================================
+   int[] arrayA = new int[20];
+    int[] arrayB = new int[20];
+    int contPar=0;
+    
+    for(int i=0,j=19;i<arrayA.length;i++){
+        arrayA[i]=(int)Math.round(Math.random()*100);
+        if(arrayA[i]%2==0){
+            arrayB[j]=arrayA[i];
+            contPar++;
+        } else {
+            arrayB[j]=arrayA[i];
+            j--;
+        }
+    }
+    
+    for(int i=0;i<arrayB.length;i++){
+        if(i<contPar){
+            System.out.println("Números pares: " + arrayB[i]);
+        } else {
+            System.out.println("Números impares: " + arrayB[i]);
+        }
+    }
