@@ -1,0 +1,81 @@
+package aula1_estrutura;
+import java.util.Scanner;
+import java.util.LinkedList;
+import java.util.Queue;
+public class fila1 {
+    public static void main(String[] args){
+        int atendimento;
+        
+        System.out.println("Bem-vindo(a) ao SantoAndré \nEscolha uma opção para iniciarmos seu atendimento:");
+        System.out.println();
+        
+        System.out.println("1 - Atendimento prioritário");
+        System.out.println("2 - Atendimento convencional.");
+        atendimento = Integer.parseInt(in.nextLine());
+        
+        if (atendimento ==1 ){
+            
+            char pacientesP = 4;
+            char[] vetor1 = new char [pacientesP];
+        
+            System.out.println("==Você esta na fila de atendimento prioritário==");
+            System.out.println("Paciente 01:");
+            vetor1[0] =in.nextLine();
+            
+            System.out.println("Paciente 02:");
+            vetor1[1] =in.nextLine();
+            
+            System.out.println("Paciente 03:");
+            vetor1[2] =in.nextLine();
+            
+            System.out.println("Paciente 04:");
+            vetor1[3] =in.nextLine();
+            
+            System.out.println("Paciente 05:");
+            vetor1[4] =in.nextLine();
+                       
+            
+            Queue<String> filaPrioritaria = new LinkedList<String>();
+            
+            
+            
+            
+            
+            
+        } else{
+            
+            char pacientesC = 4;
+            char[] vetor2 = new char [pacientesC];
+        
+            System.out.println("==Você esta na fila de atendimento prioritário==");
+            System.out.println("Paciente 01:");
+            vetor2[0] =in.nextLine();
+            
+            System.out.println("Paciente 02:");
+            vetor2[1] =in.nextLine();
+            
+            System.out.println("Paciente 03:");
+            vetor2[2] =in.nextLine();
+            
+            System.out.println("Paciente 04:");
+            vetor2[3] =in.nextLine();
+            
+            System.out.println("Paciente 05:");
+            vetor2[4] =in.nextLine();
+            
+            Queue<String> filaConvencional = new LinkedList<String>();
+        }
+    }
+}
+
+
+
+
+
+
+=============
+  for ( i = 0; i< vetor.length; i++){ 
+            vetor[i] = nome;
+        }
+
+===

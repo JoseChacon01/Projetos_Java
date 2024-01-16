@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: calculadoraTeste
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec <<< FAILURE!
+calculadoraTeste.testSomar()  Time elapsed: 0.044 sec  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <17> but was: <15>
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:55)
+	at org.junit.jupiter.api.AssertionUtils.failNotEqual(AssertionUtils.java:62)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:145)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:527)
+	at calculadoraTeste.testSomar(calculadoraTeste.java:29)
+
